@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 1100px)" href="mobile.css">
+  
+
+</head>
+
+<body>
+  <!-------------------------HEADER AND MENU FOR Mobile------------------>
+  <div class="MobileHeader">
+    <img src="img/Menu.svg" alt="" class="hamburgerMobile" id="myBtnMobile"> 
+    <span class="close_mobile" id="closeSpanMobile"><img src="img/Menu.svg" alt=""></span>
+    <div class="admin_Name_i"> <img src="img/Admin.png" alt="" class="AdminImg">
+      <div class="AdminNameText">
+        <p class="NameAdmin">M.Doe</p> <br>
+        <p class="Admin">Admin</p>
+      </div>
+      <img src="img/Dropdown_arow.png" alt="" class="dropdown_admin">
+    </div>
+    <div class="header-positioning-eng">
+      <p>English</p> <img src="img/Dropdown_arow.png" alt="" class="dropdown_eng">
+    </div>
+    <img src="img/guidigo-analytics.png" alt="" class="moblieLogo">
+  </div>
+
+
+
+
+
+
+    <div class="modal modal-content-mobile" id="myModalMobile">
+
+      <div class="popout-text-one-mobile"><img src="img/simulators.svg" alt="">
+        <p> Simulators</p>
+      </div>
+      <div class="popout-text-two-mobile"><img src="img/collections.svg" alt="">
+        <p> Collections</p>
+      </div>
+      <div class="popout-text-tree-mobile"><img src="img/users.svg" alt="">
+        <p> Users</p>
+      </div>
+      <div class="popout-text-four-mobile"><img src="img/analytics.svg" alt="">
+        <p>Analytics </p>
+      </div>
+      <div class="popout-text-five-mobile"><img src="img/tokens.svg" alt="">
+        <p>Tokens tracking</p>
+      </div>
+
+     
+    </div>
+
+  
+
+  <!-------------------------HEADER AND MENU FOR MENU ***END***------------------->
+
+  <div class="flex-container">
+
+
+
+    <!--POP OUT MENU STARTS-->
+    <div class="popout_Menu" id="myDiv">
+
+      <div id="hamburger_Logo-aligment">
+        <img src="img/Menu.svg" alt="" class="Menu" id="myBtn">
+        <span class="close" id="closeSpan"> <img src="img/Menu.svg" alt=""> </span>
+        <img src="img/guidigo-analytics.png" alt="" class="logo" id="modalLogo">
+      </div>
+
+
+    <div id="menu-display-none">
+      <div class="popout-text-one-none"><img src="img/simulators.svg" alt="">
+        
+      </div>
+      <div class="popout-text-two-none"><img src="img/collections.svg" alt="">
+        
+      </div>
+      <div class="popout-text-tree-none"><img src="img/users.svg" alt="">
+       
+      </div>
+      <div class="popout-text-four-none"><img src="img/analytics.svg" alt="">
+       
+      </div>
+      <div class="popout-text-five-none"><img src="img/tokens.svg" alt="">
+        
+      </div>
+      <div class="btn-small-div">
+        <button class="btn-small"><img src="img/Help.png" alt=""></button>
+      </div>
+      <div class="text-small">
+        <p>Copyright<p> by SENAR </p><p>2021</p></p>
+      </div>
+    </div>
+
+      <div id="myModal" class="modal">
+
+        <div class="modal-content">
+
+          <div class="popout-text-one"><img src="img/simulators.svg" alt="">
+            <p> Simulators</p>
+          </div>
+          <div class="popout-text-two"><img src="img/collections.svg" alt="">
+            <p> Collections</p>
+          </div>
+          <div class="popout-text-tree"><img src="img/users.svg" alt="">
+            <p> Users</p>
+          </div>
+          <div class="popout-text-four"><img src="img/analytics.svg" alt="">
+            <p>Analytics </p>
+          </div>
+          <div class="popout-text-five"><img src="img/tokens.svg" alt="">
+            <p>Tokens tracking</p>
+          </div>
+
+          
+          
+          <button class="popout_button">NEED HELP?</button>
+          <p class="popout_copyright">Copyright by SENAR 2021</p>
+        
+        </div>
+
+      </div>
+
+    </div>
+    <!--POP OUT MENU ENDS-->
+
+    <!--Header And Right-Side-Content Starts-->
+    <div class="bodyRight" id="body-full-right">
+
+      <div class="header-positioning">
+        <div class="TokensTracking-Heading">
+          <h6>Tokens Tracking</h6>
+        </div>
+        <div class="dropdown">
+        <div class="header-positioning-admin">
+          <div class="admin_Name_icon"> <img src="img/Admin.png" alt="" class="AdminImg">
+            <div class="AdminNameText">
+              <p class="NameAdmin">M.Doe</p> <br>
+              <p class="Admin">Admin</p>
+            </div>
+            
+   
+              <img onclick="myFunction()" src="img/Dropdown_arow.png" alt="" class="dropbtn dropdown_admin">
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Mon Profil</a>
+                <a href="#">Deconnexion</a>
+                
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="dropdownone">
+          <div class="header-positioning-english">
+            
+              <p>English</p> <img onclick="myFunctionone()" src="img/Dropdown_arow.png" alt="" class="dropbtnone dropdown_english">
+              
+              <div id="myDropdownone" class="dropdown-contentone">
+                <a href="#">English</a>
+                <a href="#">Francais</a>
+                
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!------------------------------------Header END-------------------------------->
+      <div class="analytics-box">
+
+
+        <!--------------------------------Search & Select START-------------------------------->
+        <select class="js-example-basic-single" name="state" style="width: 200px;" style="height: 44px;">
+          <option value="AL">BUREAU VERITAS</option>
+          <option value="AL">Alabama</option>
+          ...
+          <option value="WY">Wyoming</option>
+        </select>
+        <!--------------------------------Search & Select END----------------------------------->
+
+        <!--------------------------------Date picker START------------------------------------->
+        <div class="input-border-text">
+        <input type="text" name="daterange" class="datePickerInput" value="01/01/2018 - 01/15/2018" />
+      </div>
+        <button class="btn-table"><img src="img/XLS.png" alt="" class="btn-table-img">CSV EXPORT</button>
+
+        <!--------------------------------Date picker END------------------------------------->
+
+
+        <table id="table_id" class="display">
+          <p class="total-users">Users</p>
+          
+          <thead>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <th></th>
+              <th></th>
+              <th>Date</th>
+              <th>Sesions</th>
+              <th>Average Duration</th>
+              <th>Total duration</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              
+              <th></th> 
+         </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              
+              <td></td>
+              <td></td>
+              <td>2021/11/23</td>
+              <td>4</td>
+              <td>24min 7s</td>
+             
+              <td>1h 36min 31s</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              
+                           <td></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td></td>
+              <td></td>
+              <td>2021/11/23</td>
+              <td>4</td>
+              <td>24min 7s</td>
+             
+              <td>1h 36min 31s</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+                  <td></td>
+            </tr>
+         <thead>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <th>Student-First name</th>
+              <th>Student-Last name</th>
+             <th>Student-Organization</th>
+              <th>Collection</th>
+              <th>Simulator</th>
+              <th>Scenario</th>
+              <th>Date</th>
+              <th>Number of tries</th>
+              <th>Time spent</th>
+              <th>Instructor</th>
+              <th>Reference</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+             
+              <td>Bonin</td>
+            <td>Bruno  </td>
+            <td>Syngenta France SAS</td>          
+            <td>Habilis Electricien BT</td>
+            <td>Habilis(6 scenarios)</td>
+            <td>Scenario 1</td>
+            <td>2021/11/23</td>
+            <td>1</td>
+            <td>28min 36s</td>
+            <td>BOYOT Serge</td>
+            <td>797527</td>
+
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>Bonin</td>
+            <td>Bruno</td>
+            <td>Syngenta France SAS</td>          
+            <td>Habilis Electricien BT</td>
+            <td>Habilis(6 scenarios)</td>
+            <td>Scenario 1 Level 2</td>
+            <td>2021/11/23</td>
+            <td>1</td>
+            <td>7min 54s</td>
+            <td>BOYOT Serge</td>
+            <td>797527</td>
+
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>Lefort</td>
+              <td>Romain</td>
+              <td>Syngenta France SAS</td>          
+              <td>Habilis Electricien BT</td>
+              <td>Habilis(6 scenarios)</td>
+              <td>Scenario 1</td>
+              <td>2021/11/23</td>
+              <td>1</td>
+              <td>30min 5s</td>
+              <td>BOYOT Serge</td>
+              <td>797527</td>
+
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>SALLAL</td>
+              <td>Abderrazak</td>
+              <td></td>          
+              <td>Habilis Electricien BT</td>
+              <td>Habilis(6 scenarios)</td>
+              <td>Scenario 2</td>
+              <td>2021/11/23</td>
+              <td>1</td>
+              <td>29min 56s</td>
+              <td>SALLAL   Abderrazak</td>
+              <td>797527</td>
+
+            </tr>
+            
+
+          
+          </tbody>
+
+        </table>
+        <div class="table-border-bottom"></div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

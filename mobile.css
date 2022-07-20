@@ -1,0 +1,250 @@
+.MobileHeader{
+  display: flex;
+  flex-direction: row;
+  
+}
+.popout_Menu{
+  display: none;
+}
+.header-positioning-admin{
+  display: none;
+}
+.dropdownone{
+  display: none;
+}
+
+
+.hamburgerMobile{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+ margin-left: 13px;
+  
+}
+.close_mobile{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+ margin-left: 13px;
+}
+
+.header-positioning-eng{
+  border-radius: 3px;
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  margin-left: 2px;
+  font-size: 12px;
+  padding: 10.3px 3px;
+  background: #fff;
+}
+.dropdown_eng{
+  padding-left: 5px;
+  padding-right: 8px;
+}
+.moblieLogo{
+  display: flex;
+  justify-content: flex-end;
+  width: 60px;
+  height: 60px;
+}
+.admin_Name_i{
+  margin-left: 45px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  background: #fff;
+  margin-top: 0px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  border-radius: 3px;
+}
+
+
+
+/*FOR IPHONE X AND 6,7,8*/
+@media (min-width: 410px) {
+  .admin_Name_i{
+    margin-left: 85px;
+     }
+}
+
+
+/*FOR IPHONE X AND 6,7,8 PLUS */
+@media (min-width: 427px) {
+  .admin_Name_i{
+    margin-left: 105px;
+     }
+}
+@media (min-width: 440px) {
+  .admin_Name_i{
+    margin-left: 105px;
+     }
+}
+
+/*FOR 500+ */
+@media (min-width: 500px) {
+  .admin_Name_i{
+    margin-left: 188px;
+     }
+}
+/*FOR 600+ */
+@media (min-width: 620px) {
+  .admin_Name_i{
+    margin-left: 288px;
+     }
+}
+@media (min-width: 650px) {
+  .admin_Name_i{
+    margin-left: 308px;
+     }
+}
+@media (min-width: 700px) {
+  .admin_Name_i{
+    margin-left: 318px;
+     }
+}
+@media (min-width: 800px) {
+  .admin_Name_i{
+    margin-left: 518px;
+     }
+}
+
+.modal-content-mobile div{
+  display: flex;
+  align-items: center;
+  
+ 
+}
+.modal-content-mobile div p{
+  display: flex;
+  align-items: center;
+ 
+}
+.modal-content-mobile div:hover{
+  color: #FF8B37;
+}
+
+
+
+.popout-text-one-mobile{
+  padding-left: 36px;
+  padding-bottom: 36px;
+  cursor: pointer;
+  }
+
+  .popout-text-one-mobile img{
+    width: 28px;
+    height: 24px;
+  }
+
+
+  .popout-text-two-mobile{
+    padding-left:37px;
+    padding-bottom: 40px;
+    cursor: pointer;
+  }
+  .popout-text-two-mobile img{
+    width: 26px;
+  height: 21px;
+  }
+  .popout-text-tree-mobile{
+    padding-left: 41px;
+    padding-bottom: 37px;
+    cursor: pointer;
+  }
+  .popout-text-tree-mobile img{
+    width: 19px;
+  height: 21px;
+  
+  }
+  .popout-text-four-mobile{
+    padding-left: 38px;
+    padding-bottom: 40px;
+    cursor: pointer;
+  }
+  .popout-text-four-mobile img{
+    width: 24px;
+    height: 21px;
+  }
+  .popout-text-five-mobile{
+    padding-left: 39px;
+    cursor: pointer;
+    padding-bottom: 20px;
+  }
+  .popout-text-five-mobile img{
+    width: 24px;
+  height: 21px;
+  }
+  .popout-text-one-mobile p{
+    padding-left: 56px;
+    font-weight: 600;
+    color: #827A8E;
+    }
+    .popout-text-two-mobile p{
+      padding-left: 57px;
+      font-weight: 600;
+      color: #827A8E;
+    }
+    .popout-text-tree-mobile p{
+      padding-left: 61px;
+      font-weight: 600;
+      color: #827A8E;
+    }
+    .popout-text-four-mobile p{
+      padding-left: 58px;
+      font-weight: 600;
+      color: #827A8E;
+    }
+    .popout-text-five-mobile p{
+      padding-left: 59px;
+      font-weight: 600;
+      color: #827A8E;
+    }
+
+    .popout_button-mobile{    
+      margin-top: 20px; 
+    cursor: pointer;
+    background:#FF8B37;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding:11px 30px;
+    }
+
+    .popout_copyright_mobile{
+      margin-top: 5px;
+  color: black;
+  font-size: 12px;
+    }
+    .btn-container{
+      width: 100%;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+
+    .close_mobile {
+      color: #fff;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close_mobile:hover,
+    .close_mobile:focus {
+      color: #FF8B37;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    
+

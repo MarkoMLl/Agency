@@ -1,0 +1,825 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#myModalMobile{
+display: none;
+}
+
+/* ---------- HEADER MOBILE-----------------*/
+.MobileHeader {
+  display: none;
+}
+.close{
+  display: none;
+}
+#closeSpanMobile{
+  display: none;
+}
+.modal-content-mobile {
+  display: none;
+}
+.modal-content-mobile{
+margin-top: 20px;
+
+}
+
+/* ---------- Pop Out MENU STARTS-----------------*/
+#menu-display-none{
+  display: none;
+}
+.btn-small{
+  background: #FF8B37;
+  padding: 9px 9px;
+  border: none;
+  border-radius: 3px;
+  
+  position: fixed;
+  bottom: 70px;
+  left: 25px;
+  
+}
+
+.text-small{
+font-size: 13px;
+font-style: bold;
+text-align: center;
+position: fixed;
+bottom: 17px;
+left: 19px;
+}
+
+#menu-display-none{
+  margin-top: 23px;
+}
+
+.flex-container {
+  display: flex;
+
+}
+
+.popout_Menu {
+  flex: 13%;
+  background: #fff;
+}
+
+.bodyRight {
+  flex: 87%;
+  background: #F8F6FB;
+  flex-direction: row;
+  overflow-x: hidden;
+  height: 1080px;
+
+}
+
+#hamburger_Logo-aligment {
+  display: flex;
+  align-items: center;
+  max-width:300px;
+
+}
+
+.Menu {
+  display: block;
+  cursor: pointer;
+  margin-left: 26px;
+  width: 26px;
+  height: 18px;
+  padding-top: 0px;
+}
+
+.logo {
+  display: block;
+  margin-left: 107px;
+  width: 80px;
+  height: 80px;
+}
+
+/*I colored x like background so user cant see it and menu will open and close on menu click*/
+.close {
+  color:#FF8B37;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close img{
+  margin-left: 26px;
+  margin-top: 30px;
+  width: 26px;
+  height: 18px;
+}
+
+.close:hover,
+.close:focus {
+  color: #FF8B37;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  padding-top: 42px;
+  font-size: 16px;
+  
+  color: #827A8E;
+
+}
+
+
+.modal-content div {
+  display: flex;
+  align-items: center;
+}
+
+.modal-content div:hover {
+  color: #FF8B37;
+}
+
+.popout-text-one {
+  padding-left: 26px;
+  padding-bottom: 36px;
+  cursor: pointer;
+  
+ 
+}
+.popout-text-one img{
+  width: 28px;
+  height: 24px;
+}
+.popout-text-one-none{
+  padding-top: 23.2px;
+  text-align: center;
+  padding-bottom: 32px;
+
+}
+.popout-text-one-none img{
+  width: 28px;
+  height: 24px;
+}
+
+.popout-text-two {
+  padding-left: 27px;
+  padding-bottom: 40px;
+  cursor: pointer;
+  
+  
+}
+.popout-text-two img{
+  width: 26px;
+  height: 21px;
+}
+.popout-text-two-none img{
+  width: 26px;
+  height: 21px;
+}
+.popout-text-two-none{
+  text-align: center;
+  padding-bottom: 36px;
+}
+.popout-text-tree img{
+  width: 19px;
+  height: 21px;
+}
+.popout-text-tree-none img{
+  width: 19px;
+  height: 21px;
+}
+.popout-text-tree {
+  padding-left: 31px;
+  padding-bottom: 37px;
+  cursor: pointer;
+  
+}
+.popout-text-tree-none{
+  text-align: center;
+  padding-bottom: 33px;
+}
+.popout-text-four {
+  padding-left: 28px;
+  padding-bottom: 40px;
+  cursor: pointer;
+  
+}
+.popout-text-four img{
+  width: 24px;
+  height: 21px;
+}
+.popout-text-four-none img{
+  width: 24px;
+  height: 21px;
+}
+.popout-text-four-none{
+  
+  text-align: center;
+  padding-bottom: 36px;
+}
+.popout-text-five {
+  padding-left: 20px;
+  cursor: pointer; 
+}
+.popout-text-five img{
+  width: 24px;
+  height: 21px;
+}
+.popout-text-five-none img{
+  width: 24px;
+  height: 21px;
+}
+.popout-text-five-none{
+  text-align: center;
+  
+  
+}
+.popout-text-five-none img{
+  width: 40px;
+}
+.popout-text-five img{
+ width: 40px;
+}
+
+.popout-text-one p {
+  padding-left: 26px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.popout-text-two p {
+  padding-left: 27px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.popout-text-tree p {
+  padding-left: 31px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.popout-text-four p {
+  padding-left: 32px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.popout-text-five p {
+  padding-left: 24px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.popout_button {
+  
+  margin-left: 50px;
+  align-items: center;
+  cursor: pointer;
+  background: #FF8B37;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 11px 30px;
+  border-radius: 5px;
+}
+.popout_button:hover{
+background: #e4792d;
+}
+
+ 
+ .popout_button
+  {
+    position: fixed;
+    bottom: 70px;
+    
+  }
+
+
+.popout_copyright {
+  margin-top: 30px;
+  padding-left: 50px;
+  color: black;
+  font-size: 12px;
+  position: fixed;
+  bottom: 27px;
+}
+
+/* ---------- Pop Out MENU END--------------------*/
+/* ------------------------------------------ RESPONSIVNES FLEX--------------------*/
+@media (max-width: 800px) {
+
+  .popout_Menu,
+  .bodyRight {
+    flex: 100%;
+  }
+}
+
+/* ------------------------------------------ Header-------------------*/
+.header-positioning {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TokensTracking-Heading h6{
+  font-size: 22px !important;
+  color: #FF8B37;
+  
+  letter-spacing: 2.5px;
+  line-height: 22px;
+  padding-top: 64px;
+
+  justify-content: flex-start;
+}
+
+.header-positioning-admin {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.admin_Name_icon {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin-top: 30px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  border-radius: 3px;
+}
+
+.AdminNameText {
+  max-height: 60px;
+}
+
+.NameAdmin {
+  height: 0px;
+}
+
+.Admin {
+  color: #FF8B37;
+  background: #fff;
+}
+
+.header-positioning-english {
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+  align-items: center;
+  margin-left: 2px;
+  margin-top: 30px;
+  padding: 20.3px 15px;
+  background: #fff;
+  margin-right: 10px;
+  
+}
+.dropdown{
+  display: flex;
+  cursor:pointer;
+}
+.dropdownone{
+  display: flex;
+  cursor:pointer;
+}
+.dropdown_english {
+  padding-left: 22px;
+}
+
+.AdminImg {
+  padding-left: 6px;
+  padding-right: 10px;
+}
+
+.dropdown_admin {
+  padding-left: 20px;
+  padding-right: 14px;
+}
+
+/* TABLE*/
+
+.bodyRight {
+  height: 1400px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.analytics-box {
+  max-width: 1580px;
+  height: 1011px;
+  margin-top: 30px;
+  background: white;
+  border-radius: 3px;
+  padding-left: 41px;
+  padding-right: 30px;
+  box-shadow: 10px 10px 8px 10px 10px rgba(78, 43, 129, 0.14);
+}
+@media (max-width: 1300px){
+  .analytics-box{
+    height: 1000px;
+  }
+}
+
+
+
+/*
+
+@media (max-width: 1600px) {
+  .analytics-box {
+    width: 1100px;
+    height: 948px;
+ 
+  }
+}
+*/
+
+
+
+
+/* Keza */
+table.dataTable.stripe tbody tr.odd,
+table.dataTable.display tbody tr.odd,
+table.dataTable.display tbody tr.odd>.sorting_1,
+table.dataTable.order-column.stripe tbody tr.odd>.sorting_1,
+table.dataTable.display tbody tr:hover>.sorting_1,
+table.dataTable.order-column.hover tbody tr:hover>.sorting_1,
+table.dataTable.display tbody tr.even>.sorting_1,
+table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+  background-color: white;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+  border-bottom: none;
+  background: #F8F6FB;
+  
+  border-bottom: 1px solid #E1DAEB;
+}
+
+
+element.style {
+  width: 20px;
+}
+
+.Analytics-box .select2 {
+  position: relative;
+
+
+}
+
+.select2-container .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  width: 358px;
+  height: 44px;
+  border-color: #E1DAEB;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+
+}
+
+
+
+
+
+
+
+.input-border-text{
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 44px;
+}
+
+.select2::after {
+  content: 'Author';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: white;
+  font-size: 12px;
+  color: #827A8E;
+  font-weight: 600;
+  padding: 0 5px;
+
+}
+
+.input-border-text{
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+
+.input-border-text::after
+{
+  content: 'Date';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: white;
+  font-size: 12px;
+  color: #827A8E;
+  font-weight: 600;
+  padding: 0 5px;
+
+}
+
+
+.table.dataTable thead .sorting_asc {
+  border-color: #FF8B37 transparent transparent transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #FF8B37 transparent transparent transparent;
+
+}
+
+.datePickerInput {
+  margin-left: 0;
+  width: 358px;
+  height: 44px;
+  margin-top: 0;
+  color: #827A8E;
+  border: 1px solid #E1DAEB;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.text-tokens-tracking {
+  display: flex;
+  flex: 30%;
+}
+
+
+
+
+
+.btn-table {
+  display: inline-flex;
+  justify-content: center;
+  background: #FF8B37;
+  width: 166px;
+  height: 44px;
+  float: right;
+  border: none;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  
+  margin-top: 30px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+}
+
+@media (max-width:1320px){
+  .btn-table{
+    align-items: center;
+    float: none;
+   
+  }
+  .analytics-box{
+    height: 1000px;
+  }
+}
+
+
+.btn-table:hover {
+  background: #e4792d;
+}
+.btn-table-img {
+  padding-right: 10px;
+}
+
+
+
+.dataTables_wrapper .dataTables_length {
+
+  float: right;
+}
+
+
+
+
+
+
+#table-id thead {
+  background: #322b3b;
+}
+
+
+.dataTables_wrapper .dataTables_info {
+  float: right;
+}
+
+
+element.style {
+  border-right: 1px solid wheat;
+}
+
+
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  left: auto;
+  right: 10px;
+}
+
+.select2-container {
+  width: 358px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: 5px;
+}
+
+input.datePickerInput {
+
+  padding-left: 10px;
+  background-image: url(img/Calendar.png);
+  background-repeat: no-repeat;
+  background-size: 22px 21px;
+  background-position: 95% 50%;
+  font-size: 14px;
+}
+
+thead {
+  border-right: 1px solid #827A8E;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  padding: 10px 10px;
+  border: 1px solid #E1DAEB;
+  border-top: none;
+  border-bottom: none;
+  margin: 0;
+}
+
+.dataTables_wrapper .dataTables_length {
+  padding: 10px 10px;
+  margin: 0;
+
+  border: 1px solid #E1DAEB;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  padding: 4px 10px;
+  border: 1px solid #E1DAEB;
+}
+
+.dataTables_wrapper .dataTables_info {
+  padding: 13px 10px;
+  border: 1px solid #E1DAEB;
+  
+}
+
+
+.total-users {
+  padding: 13px 0;
+  border: 1px solid #E1DAEB;
+  z-index: -1;
+  width: 1300px;
+  padding-left: 10px;
+  transform: translateY(50px);
+
+  
+}
+
+.table-border-bottom {
+  z-index: -1;
+  height: 50px;
+  
+  border: 1px solid #E1DAEB;
+  transform: translateY(-50px);
+
+}
+
+table.dataTable.no-footer {
+  border-bottom: none;
+}
+
+table thead {
+  line-height: 1.75;
+  font-size: 14px;
+}
+table tbody{
+  font-size: 14px;
+}
+
+table tbody td {
+
+  line-height: 1.75;
+}
+
+
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover{
+  background-color: #f6f6f6;
+}
+
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled{
+  text-align: left;
+}
+table.dataTable thead th, table.dataTable thead td{
+  padding: 10px 0px;
+}
+table.dataTable.no-footer{
+  max-width: 1520px;
+}
+table thead{
+  text-align: left;
+}
+table.dataTable tbody th, table.dataTable tbody td{
+  padding: 9px 20px;}
+  table.dataTable thead th, table.dataTable thead td{
+    padding: 9px 20px;
+  }
+  table.dataTable thead th, table.dataTable thead td{
+    padding: 9px 20px;
+  }
+
+
+
+
+/* Dropdown Content (Hidden by Default)  ADMIN  LANGUAGE*/
+.dropdown-content {
+  
+  display: none;
+ position: absolute;
+  background-color: #fff;
+  min-width: 155px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 1;
+  margin-top: 156px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #E1DAEB}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+/* Dropdown Content (Hidden by Default)  ADMIN  LANGUAGE*/
+.dropdown-contentone {
+  display: none;
+ position: absolute;
+  background-color: #fff;
+  min-width:105px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  z-index: 1;
+  
+  margin-top: 38px;
+  margin-top: 156px;
+}
+
+/* Links inside the dropdown */
+.dropdown-contentone a {
+  color: black;
+  padding: 10px 16px;
+  
+  text-decoration: none;
+  display: block;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-contentone a:hover {background-color: #E1DAEB; }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Dropdown Content (Hidden by Default)  ADMIN  LANGUAGE END*/
+ 
+.total-users{
+  width: calc( 100% + 5px );
+}
